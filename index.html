@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrainSource | Premium Organic Sourcing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              earth: {
+                50: '#FDFCF8',  /* Soft Cream Background */
+                100: '#F4F1EA', /* Light Sand */
+                200: '#E6E0D4', /* Beige Border */
+                300: '#D4C5B0', /* Darker Sand */
+                400: '#A89F91',
+                500: '#8C867A', /* Muted Text */
+                600: '#6B655D',
+                700: '#4A453E',
+                800: '#463F3A', /* Warm Grey Text */
+                900: '#2C2824', /* Soft Black */
+              },
+              nature: {
+                50: '#F1F7F6',
+                100: '#DDECE9',
+                200: '#BBDAD4',
+                300: '#94C4BB',
+                400: '#6DAFA3',
+                500: '#4A9A8C', /* Muted Teal */
+                600: '#387D70',
+                700: '#2A6359',
+                800: '#1F4B43', /* Deep Teal */
+                900: '#163630', /* Darkest Teal */
+              },
+              grain: {
+                50: '#FEF6F4',
+                100: '#FDECE8',
+                200: '#FBD5CC',
+                300: '#F7B7AA',
+                400: '#E76F51', /* Terracotta Accent */
+                500: '#D95D3F',
+                600: '#BC4B2F',
+                700: '#9E3B22', /* Deep Rust */
+              },
+              gold: {
+                400: '#D4AF37',
+                500: '#C5A059', /* Stamped Gold */
+                600: '#A68442',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            boxShadow: {
+              'soft': '0 20px 40px -15px rgba(44, 40, 36, 0.05)',
+              'soft-hover': '0 30px 60px -15px rgba(44, 40, 36, 0.1)',
+              'card': '0 2px 4px rgba(44, 40, 36, 0.02), 0 8px 16px rgba(44, 40, 36, 0.04)',
+            },
+            animation: {
+              'fade-in': 'fadeIn 1s ease-out forwards',
+              'fade-in-up': 'fadeInUp 1.2s ease-out forwards',
+              'slow-zoom': 'slowZoom 20s linear infinite alternate',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              slowZoom: {
+                '0%': { transform: 'scale(1)' },
+                '100%': { transform: 'scale(1.1)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FDFCF8; /* earth-50 */
+        color: #2C2824; /* earth-900 */
+      }
+      /* Custom scrollbar for dashboard tables */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "recharts": "https://esm.sh/recharts@^3.6.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
